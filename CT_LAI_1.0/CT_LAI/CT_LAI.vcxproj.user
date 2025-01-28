@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LocalDebuggerWorkingDirectory>D:\TACT-data\AT01</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-ptx "PTX\*.ptx" -envelope "ENVELOPE\*.pcd"  -g g_Mes_5.txt 18 -xy_scale 30 -img_debug</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerWorkingDirectory>D:\TACT-data\AT01</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>-ptx "PTX\*.ptx" -envelope "ENVELOPE\*.pcd"  -g g_Mes_5.txt 18 -xy_scale 30 -img_debug</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+</Project>
