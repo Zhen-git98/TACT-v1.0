@@ -8,16 +8,15 @@ The Tree Canopies Computed Tomography (TACT) model was proposed by Yuzhen Xing, 
 
 (b) Project - Properties - Debugging - Command parameters: -ptx 'PTX*.ptx' -envelope 'ENVELOPE*.pcd' -g g_Mes_5.txt 18 -xy_scale 30 -img_debug
 
--ptx 'PTX*.ptx' :              use all .ptx files in the PTX folder for the calculation;
+-ptx 'PTX*.ptx' :            use all .ptx files in the PTX folder for the calculation;
 
--envelope 'ENVELOPE*.pcd' :    perform the calculation on each tree canopy envelope in the ENVELOPE folder, ensuring they correspond to the PTX data;
+-envelope 'ENVELOPE*.pcd' :  perform the calculation on each tree canopy envelope in the ENVELOPE folder, ensuring they correspond to the PTX data;
 
--g g_Mes_5.txt 18 :            'g_Mes_5.txt' is used to calculate the G value, detailed description can be found in the paper;
+-g g_Mes_5.txt 18 :          'g_Mes_5.txt' is used to calculate the G value, detailed description can be found in the paper;
 
--xy_scale 30 :                 -xy_scale determines how many voxels the x and y dimensions of the tree canopy bounding box are divided into, as this directly affects the voxel size;
+-xy_scale 30 :               -xy_scale determines how many voxels the x and y dimensions of the tree canopy bounding box are divided into, as this directly affects the voxel size;
 
--img_debug :                   for first-time use, we recommend using the parameter '-img_debug' to generate debug images, which can be used to check if the data reading code has correctly extracted the target canopy point cloud from the .ptx file. The data reading code 
-                               in the current version may be affected by different TLS systems and scanning methods.
+-img_debug :                 for first-time use, we recommend using the parameter '-img_debug' to generate debug images, which can be used to check if the data reading code has correctly extracted the target canopy point cloud from the .ptx file. The data reading code in the current version may be affected by different TLS systems and scanning methods.
 
 3. We have provided executable files and running scripts in the Quick-use section, allowing for a faster and more direct understanding of TACT when combined with our open-source data.
 
